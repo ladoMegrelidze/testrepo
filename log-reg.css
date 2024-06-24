@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+
+.auth .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_img img {
+    width: 80%;
+}
+
+.auth .head select {
+    border: solid 1px #ddd;
+    border-radius: 8px;
+    margin: 10px 20px 0px 0px;
+    padding: 5px;
+}
+
+.auth {
+    padding: 35px 95px 35px 95px;
+    width: 45%;
+    height: 100vh;
+}
+
+.tnet_form input {
+    width: 97%;
+    border: solid 1px #ddd;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.input-group {
+    width: 98% !important;
+}
+
+.viewPwd {
+    padding: 15px !important;
+}
+
+#password {
+    margin-left: -8px;
+}
+
+.recover {
+    float: right;
+    margin: 22px 18px 0 0;
+    font-weight: 500;
+}
+
+.tnet_form button {
+    width: 97%;
+    background-color: rgb(74, 115, 246);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    margin: 32px 0 18px 0;
+}
+
+.tnet_foot {
+    width: 97%;
+}
+
+.tnet_foot a {
+    text-decoration: none;
+    border: solid 1px #ddd;
+    padding: 12px;
+    text-align: center;
+    color: black;
+    border-radius: 8px;
+    width: 32%;
+    margin-bottom: 50px;
+}
+
+.tnet_foot a i {
+    font-size: 20px;
+}
+
+.facebook i {
+    color: rgb(74, 115, 246);
+}
+
+.slider {
+    padding: 0 95px 35px 95px;
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.slide_track_1 {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    animation: slide 35s linear infinite;
+
+}
+
+.slide_track_2 {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    animation: reverses 35s linear infinite;
+    margin-top: -3500px
+}
+
+.slide_track_1 img, .slide_track_2 img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translatey(-100%);
+    }
+}
+
+@keyframes reverses {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translatey(100%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .slider {
+        display: none;
+    }
+
+    .auth {
+        width: 100%;
+    }
+}

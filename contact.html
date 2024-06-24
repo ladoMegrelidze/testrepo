@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>უძრავი ქონების პორტალი საქართველოში, ბინები, ყიდვა გაყიდვა გაქირავება - MyHome.ge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="adds">
+                <img src="images/addVolvo.png" alt="volvo">გადაიხადე VISA ბარათიდ Google Play-სა და Apple Pay-ს
+                საშაუალებით და მიიღე მონაწილეობა გათამაშებაში TNET | VISA
+            </div>
+            <div class="header_top">
+                <div class="logo_div">
+                    <a href="/" class="logo_a">
+                        <div class="logo_back">
+                            <div class="logo_top">myhome </div> .ge
+                        </div>
+                    </a>
+                </div>
+
+                <div class="burger_menu">
+                    <nav class="menu--right" role="navigation">
+                        <div class="menuToggle">
+                            <input type="checkbox" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <ul class="menuItem">
+                                <li>
+                                    <select name="language-select">
+                                        <option lang="en" value="english" selected>ინგლისური</option>
+                                        <option lang="ka" value="georgian" selected>ქართული</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <a class="login" href="login.html">
+                                        <i class="fa-regular fa-user"></i> შესვლა
+                                    </a>
+                                </li>
+                                <li><a href="/">მთავარი</a></li>
+                                <li><a href="agencies.html">სააგენტოები</a></li>
+                                <li><a href="contact.html">კონტაქტი</a></li>
+                                <li><a href="help.html">დახმარება</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="entries_div">
+                    <div class="languages">
+                        <div class="select_lang">
+                            <select name="language-select">
+                                <option lang="en" value="english" selected>ინგლისური</option>
+                                <option lang="ka" value="georgian" selected>ქართული</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a class="login" href="login.html">
+                        <i class="fa-regular fa-user"></i> შესვლა
+                    </a>
+                    <a class="tnet_logo" href="#">
+                        <img src="images/tnet_lg.png">
+                    </a>
+                </div>
+            </div>
+            <hr class="header_hr">
+            <div class="header_bottom">
+                <nav class="navigation">
+                    <a href="/" class="navigation_a">მთავარი</a>
+                    <a href="agencies.html" class="navigation_a">სააგენტოები</a>
+                    <a href="contact.html" class="navigation_a navigation_fl ml-2 mr-3">კონტაქტი</a>
+                    <a href="help.html" class="navigation_a navigation_fl">დახმარება</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main content -->
+        <main class="main_container">
+            <section class="content mx-auto">
+                <h3 class="m-4">კონტაქტი</h3>
+                <p class="text">სერვისის გამოყენებასთან დაკავშირებით კითხვების შემთხვევაში, იხილე <a href="help.html"
+                        target="_blank">დახმარების გვერდი</a> ან მოგვწერე ქვემოთ მოცემული საკონტაქტო ფორმის საშუალებით.
+                </p>
+                <p class="icon"><i class="fa-solid fa-house"></i> შპს თინეთი</p>
+                <p class="icon"><i class="fa-regular fa-envelope"></i> <a
+                        href="mailto:info@myhome.ge">info@myhome.ge</a></p>
+                <p class="icon"><i class="fa-regular fa-id-card"></i> საიდ. კოდი: 402 116 474</p>
+                <p class="icon"><i class="fa-solid fa-phone"></i> +995 32 280 00 15</p>
+
+                    
+                <hr>
+                <div class="contact d-flex">
+                    <form action="https://www.myhome.ge/ka/contact/send/" class="contact_form" onsubmit="return _contact.send(this);"
+                        method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mh-form-group"><input class="form-control" id="firstName" name="Name"
+                                        type="text" placeholder="სახელი" value=""><label for="firstName">სახელი</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mh-form-group"><input class="form-control" id="phone" name="Phone"
+                                        type="text" data-type="int" placeholder="ტელეფონი"
+                                        data-error="ჩაწერეთ ტელეფონის ნომერი" onkeydown="validate(event, 'int');"><label
+                                        for="phone">ტელეფონი</label></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mh-form-group"><input class="form-control" id="email" name="Email"
+                                        type="email" placeholder="ელ-ფოსტა" data-error="ჩაწერე სწორი ელ-ფოსტა"
+                                        data-type="email" value=""><label for="email">ელ-ფოსტა</label></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mh-form-group"><textarea class="form-control textarea" name="Message"
+                                        id="text" type="text" placeholder="Text"
+                                        data-error="შეიყვანე შეტყობინება"></textarea><label for="text">შეტყობინება</label>
+                                </div>
+                                <div class="d-flex form-group">
+                                    <div class="d-flex captcha-container">
+                                        <div class="captcha-text flex-wrap d-flex mr-20px">
+                                            <div class="d-block captcha-image"
+                                                style="background-image:url(data:image/png;base64,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);">
+                                                <div class="re-captcha align-items-center justify-content-center cursor-pointer"
+                                                    title="კოდის განახლება"><i class="d-inline-block reload-captcha"
+                                                        onclick="captcha.update(this, 'https://www.myhome.ge/ka/contact/getcaptcha/');"><svg
+                                                            aria-hidden="true" data-prefix="fas" data-icon="sync"
+                                                            class="svg-inline--fa fa-sync fa-w-16" role="img"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                            <path fill="currentColor"
+                                                                d="M440.935 12.574l3.966 82.766C399.416 41.904 331.674 8 256 8 134.813 8 33.933 94.924 12.296 209.824 10.908 217.193 16.604 224 24.103 224h49.084c5.57 0 10.377-3.842 11.676-9.259C103.407 137.408 172.931 80 256 80c60.893 0 114.512 30.856 146.104 77.801l-101.53-4.865c-6.845-.328-12.574 5.133-12.574 11.986v47.411c0 6.627 5.373 12 12 12h200.333c6.627 0 12-5.373 12-12V12c0-6.627-5.373-12-12-12h-47.411c-6.853 0-12.315 5.729-11.987 12.574zM256 432c-60.895 0-114.517-30.858-146.109-77.805l101.868 4.871c6.845.327 12.573-5.134 12.573-11.986v-47.412c0-6.627-5.373-12-12-12H12c-6.627 0-12 5.373-12 12V500c0 6.627 5.373 12 12 12h47.385c6.863 0 12.328-5.745 11.985-12.599l-4.129-82.575C112.725 470.166 180.405 504 256 504c121.187 0 222.067-86.924 243.704-201.824 1.388-7.369-4.308-14.176-11.807-14.176h-49.084c-5.57 0-10.377 3.842-11.676 9.259C408.593 374.592 339.069 432 256 432z">
+                                                            </path>
+                                                        </svg></i></div>
+                                            </div><input type="hidden" name="CaptchaKey" class="CaptchaKey"
+                                                value="6ad04945e525bf31cf3047a69789d262">
+                                            <div class="p-relative"><input type="text" id="CaptchaVal" name="CaptchaVal"
+                                                    class="CaptchaVal form-control" maxlength="5" placeholder="კოდი"
+                                                    data-lengths="[5]" data-error="ჩაწერე უსაფრთხოების კოდი"><label
+                                                    for="CaptchaVal">კოდი</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group"><button class="btn btn-success border-0">გაგზავნა</button></div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="map col-lg-7"><a href="https://www.google.ge/maps/place/My.Ge/@41.7270382,44.7304178,17z/data=!3m1!4b1!4m5!3m4!1s0x4044730f2ad2dce5:0x826f14e8d390d76d!8m2!3d41.7270382!4d44.7326065?hl=ka" target="_blank">
+                        <img class="map-image" src="https://www.myhome.ge/framework/templates/assets/img/map.PNG?v=1" alt="My.Ge Location"></a></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="m-5 mb-0">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-1">
+                    <h5>ნავიგაცია</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">იპოთეკა</a></li>
+                        <li class="nav-item mb-2"><a href="agencies.html"
+                                class="nav-link p-0 text-body-secondary">სააგენტოები</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">პროექტები</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">აზომვა</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">შეფასება</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>დახმარება</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">რეკლამა</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">საიტის წესები</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">კონტაქტი</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">032 2 80 0015</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="mailto:info@myhome.ge"
+                                class="nav-link p-0 text-body-secondary">info@myhome.ge</a></li>
+                    </ul>
+                    <div class="social_icons ml-5 d-flex">
+                        <a class="nav-item mb-2"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="nav-item mb-2"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="nav-item mb-2"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-3 mb-3">
+                    <h5>განცხადებები</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">ბინები
+                                ქირითვარკეთილში</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">იყიდება
+                                მშენებარებინები დიღომში</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">ქირავდება
+                                ბინებიქუთაისში</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">ბინები
+                                ქირითგლდანში</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">იყიდება
+                                ბინებიგლდანში</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 offset-md-1 mb-3">
+                    <form>
+                        <h5>გამოიწერე და გაეცანი სიახლეებს</h5>
+                        <p>გაეცნობიტ ცვლილებებს ყოველთვიურად და ნახავ სიახლეებს</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">ელ.ფოსტა</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="ელ.ფოსტა">
+                            <button class="subscribtion" type="button">გამოწერა</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="partners">
+                <img src="images/partners.png" alt="partners">
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between border-top">
+                <p class="mx-auto">© 2024 Company, Inc. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNET - ანგარიშის შექმნა</title>
+    <link rel="stylesheet" href="log-reg.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon (1).ico">
+    <style>
+        .slider {
+            height: 155vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper d-flex">
+        <div class="auth">
+            <div class="head">
+                <a href="/login.html" class="logo_img"><img src="images/tnet.png" alt=""></a>
+                <select name="language-select">
+                    <option lang="en" value="english" selected>ინგლისური</option>
+                    <option lang="ka" value="georgian" selected>ქართული</option>
+                </select>
+            </div><br><br><br>
+            <div class="tnet_body">
+                <h2 class="fw-bold">ანგარიშის შექმნა</h2><br>
+                <form class="tnet_form row g-3 needs-validation" novalidate>
+                    <input type="email" class="form-control" id="validationCustom01" placeholder="ელფოსტა" required>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="password" placeholder="პაროლი" class="form-control"
+                                   id="password"
+                                oninput="validatePassword(this.value)" id="validationCustom02" required>
+                            <div class="input-group-append">
+                                <a class="btn btn-outline-secondary viewPwd"
+                                        type="button" id="togglePassword">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <ul style="list-style: none;">
+                            <li id="minLength"><i class="fas fa-times
+                                 text-danger"></i> მინიმუმ ინგლისური 8 სიმბოლო</li>
+                            <li id="uppercase"><i class="fas fa-times
+                                 text-danger"></i> მინიმუმ 1 დიდი ასო</li>
+                            <li id="lowercase"><i class="fas fa-times
+                                 text-danger"></i> მინიმუმ 1 პატარა ასო</li>
+                            <li id="symbol"><i class="fas fa-times
+                                 text-danger"></i> მინიმუმ 1 სიმბოლო (@$!%*?&)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <input type="date" class="form-control" id="validationCustom03" placeholder="რეგისტრაციის თარიღი"
+                        required>
+                    <div class="invalid-feedback">ცუდია!</div>
+
+                    <div class="input-group has-validation" style="margin-left: -8px;">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername"
+                            placeholder="მომხმარებლის სახელი" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            მომხმარებლის სახელი სავალდებულოა.
+                        </div>
+                    </div>
+
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="ქვეყანა" required>
+                    <div class="invalid-feedback">
+                        ქვეყანის დასახელება სავალდებულოა.
+                    </div>
+
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="ქალაქი" required>
+                    <div class="invalid-feedback">
+                        ქალაქის დასახელება სავალდებულოა.
+                    </div>
+
+                    <input type="number" class="form-control" id="validationCustom05" placeholder="ტელეფონის ნომერი"
+                        required>
+                    <div class="invalid-feedback">
+                        ტელეფონის ნომერი სავალდებულოა.
+                    </div>
+
+                    <button type="submit">რეგისტრაცია</button>
+                </form>
+            </div>
+            <div class="tnet_foot d-flex justify-content-between">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="google"><img
+                        src="images/Google__G__logo.svg.png" width="20" alt="google"> Google</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="facebook"><i
+                        class="fa-brands fa-square-facebook"></i> Facebook</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="apple"><i
+                        class="fa-brands fa-apple"></i> Apple ID</a>
+            </div>
+            <div class="register_div d-flex justify-content-center">
+                <p>არსებული ანგარიშით შესვლა - <a href="/login.html"> შესვლა</a></p>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slide_track_1">
+                <img src="images/slide_track_1.png" alt="slide_track">
+                <img src="images/slide_track_2.png" alt="slide_track">
+                <img src="images/slide_track_3.png" alt="slide_track">
+                <img src="images/slide_track_4.png" alt="slide_track">
+                <img src="images/slide_track_5.png" alt="slide_track">
+                <img src="images/slide_track_6.png" alt="slide_track">
+                <img src="images/slide_track_7.png" alt="slide_track">
+            </div>
+            <div class="slide_track_2">
+                <img src="images/slide_track_7.png" alt="slide_track">
+                <img src="images/slide_track_6.png" alt="slide_track">
+                <img src="images/slide_track_5.png" alt="slide_track">
+                <img src="images/slide_track_4.png" alt="slide_track">
+                <img src="images/slide_track_3.png" alt="slide_track">
+                <img src="images/slide_track_2.png" alt="slide_track">
+                <img src="images/slide_track_1.png" alt="slide_track">
+            </div>
+        </div>
+    </div>
+    <script src="log-reg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+    </script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js">
+    </script>
+</body>
+
+</html>
